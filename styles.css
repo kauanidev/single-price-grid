@@ -1,0 +1,151 @@
+:root {
+
+    --cyan: #2ab2af;
+    --light-cyan: #4ABEBD;
+    --yellow: #c0df34;
+    --gray: #e5eff5;
+    --blue: #98a6bd;
+    --white: #ffffff;
+}
+
+* {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray);
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+main {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px 3px rgba(0, 0, 0 , 0.2);
+}
+
+main>section {
+    padding: 50px;
+}
+
+.first {
+    background: var(--white);
+    grid-column: 1 / -1;
+}
+
+.second {
+    background: var(--cyan);
+}
+
+.third {
+    background: var(--light-cyan);
+}
+
+.first h1 {
+    margin-bottom: 30px;
+    color: var(--cyan);
+}
+
+.first h3 {
+    margin-bottom: 15px;
+    color: var(--yellow);
+}
+
+.first p {
+    color: var(--blue);
+    font-size: 17px;
+}
+
+
+
+.second h3 , .third h3 {
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.second div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 7px;
+    color: var(--white);
+}
+
+.second h1 {
+    font-size: 32px;
+}
+
+.second span {
+    opacity: 0.5;
+}
+
+.second p {
+    margin-bottom: 35px;
+    color: var(--white);
+    font-size: 16.5px;
+}
+
+.second button {
+    width: 100%;
+    padding: 12px 0px;
+    font-size: 17px;
+    background: var(--yellow);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px 3px rgba(0, 0, 0 , 0.2);
+}
+
+.third ul {
+    list-style: none;
+    color: var(--white);
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+}
+
+
+@media(max-width:800px) {
+
+    main {
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
+    }
+    body {
+        height: auto;
+        padding: 40px;
+    }
+    .second div {
+        justify-content: center;
+    }
+}
+
+@media(max-width:500px) {
+
+    main section , body{
+        padding: 30px;
+    }
+}
