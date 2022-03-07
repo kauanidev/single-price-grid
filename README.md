@@ -20,7 +20,7 @@
 &nbsp;
 
 ### 💜 Link para o projeto online
-* [Single Prince Grid](https://kauanidev.github.io/single-price-grid/)
+* [Single Price Grid](https://kauanidev.github.io/single-price-grid/)
 
 &nbsp;
 
